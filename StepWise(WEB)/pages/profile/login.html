@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="login.php">
+          <h1>Вход</h1>
+          <label for="email"><b>Электронная почта</b></label>
+          <input type="email"  name="email" required>
+          <label for="password"><b>Пароль</b></label>
+          <input type="password" name="password" required>
+          <button type="submit">Войти</button>
+          <div class="register-link">
+            <p>Нет аккаунта?</p>
+            <p><a href="registration.html" target="_self">Зарегистрируйтесь</a></p>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

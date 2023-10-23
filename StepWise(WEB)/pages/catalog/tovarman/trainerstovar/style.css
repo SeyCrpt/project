@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "montserrat"; 
+    src: url("../../../../font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+    } 
+@font-face {
+    font-family: "roboto"; 
+    src: url("../../../../font/Roboto/Roboto.ttf") format("truetype");
+    font-weight: bold;
+    } 
+  
+    #myBtn {
+      display: none; /* Скрыть кнопку по умолчанию */
+      position: fixed; /* Зафиксировать кнопку в правом нижнем углу */
+      bottom: 5%;
+      right: 2%;
+      z-index: 99;
+      font-size: 1em;
+      border: none;
+      outline: none;
+      background-color: #000000;
+      color: white;
+      cursor: pointer;
+      padding: 1%;
+      border-radius: 0.5em;
+    }
+    
+    #myBtn:hover {
+      background-color: #464646; /* Добавить темный серый цвет при наведении курсора */
+    }
+    
+
+/* Стили для header */
+header {
+  background-color: #fff;
+  padding: 1%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: montserrat;
+  display: inline-block;
+  background-color: black;
+  padding: 1%;
+  margin-top: 1%;
+  margin-left: 2%;
+
+}
+
+.step {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+.wise {
+    color: white;
+    font-size: 1.5em;
+  }
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu{
+    margin-left: 5%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 0;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  nav li:hover{
+    transform: scale(1.1);
+  }
+  
+  nav a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    margin-right: 10%;
+    background-color: white;
+    border: 0 solid black;
+    z-index: 1;
+    height: auto;
+    width: 200%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav .submenu li {
+    display: block;
+    flex-direction: column;
+    font-family: roboto;
+    font-size: 0.7em;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  nav .submenu1 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-right: 10%;
+    background-color: white;
+    border: 0px solid black;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav .submenu1 li {
+    display: block;
+    flex-direction: column;
+    font-family: roboto;
+    font-size: 12px;
+    margin-left: 10%;
+  }
+  
+  nav li:hover > .submenu {
+    display: block;
+  }
+  
+  nav li:hover > .submenu1 {
+    display: block;
+  }
+
+.iconblock{
+    display: flex;
+    margin-right: 2%;
+}
+
+.icon {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+.icon button {
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.icon button img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Стили для контейнера товара */
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+ }
+ 
+ /* Стили для изображения товара */
+ .product img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    margin-left: 15%;
+ }
+ 
+ /* Стили для информации о товаре */
+ .product-info {
+    width: 30%;
+ }
+ 
+ /* Стили для названия товара */
+ .product-name {
+    font-size: 24px;
+    font-family: roboto;
+    margin-top: 0;
+    margin-bottom: -1%;
+ }
+ 
+ /* Стили для модели товара */
+ .product-model {
+    font-size: 16px;
+    font-family: roboto;
+    margin-top: 0;
+    margin-bottom: 10%;
+ }
+ 
+ /* Стили для цены товара */
+ .product-price {
+    font-size: 20px;
+    font-family: roboto;
+    margin-top: 0;
+    margin-bottom: 10px;
+ }
+ 
+ /* Стили для выбора размера товара */
+ .product-size {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10%;
+ }
+ 
+ .product-size label {
+    margin-right: 10px;
+    font-family: roboto;
+ }
+ 
+ /* Стили для кнопки "Добавить в корзину" */
+ .add-to-cart-btn {
+    display: block;
+    padding: 5%;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15%;
+ }
+ 
+ .add-to-cart-btn:hover {
+    background-color: #555;
+ }
+ 
+ /* Стили для блока описания товара */
+ .product-description {
+    margin: 20px;
+ }
+ 
+ /* Стили для заголовка описания товара */
+ .product-description h2 {
+    font-size: 20px;
+    font-family: roboto;
+    margin-top: 0;
+    margin-bottom: 10px;
+ }
+
+ #size-select{
+    width: 50%;
+    height: 10%;
+    text-align: center;
+    font-family: roboto;        
+    border: 1px solid black;
+    border-radius: 5px;
+ }
+ select{
+    height: 20px;
+    padding: 5%;
+    font-size: 15px;
+ }
+ p{
+    font-family: roboto;
+ }

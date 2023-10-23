@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "montserrat"; 
+    src: url("../../font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+    } 
+@font-face {
+    font-family: "roboto"; 
+    src: url("../../font/Roboto/Roboto.ttf") format("truetype");
+    font-weight: bold;
+    } 
+  
+    #myBtn {
+      display: none; /* Скрыть кнопку по умолчанию */
+      position: fixed; /* Зафиксировать кнопку в правом нижнем углу */
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #000000;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #000000; /* Добавить темный серый цвет при наведении курсора */
+    }
+    
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+
+      
+/* Стили для header */
+header {
+  background-color: #fff;
+  padding: 1%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: montserrat;
+  display: inline-block;
+  background-color: black;
+  padding: 1%;
+  margin-top: 1%;
+  margin-left: 2%;
+
+}
+
+.step {
+    color: white;
+    font-size: 24px;
+  }
+  
+.wise {
+    color: white;
+    font-size: 24px;
+  }
+
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu{
+    margin-left: 10%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 30px;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  nav li:hover{
+    transform: scale(1.1);
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    margin-right: 10%;
+    background-color: white;
+    border: 0px solid black;
+    z-index: 1;
+    height: auto;
+    width: 200%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav .submenu li {
+    display: block;
+    flex-direction: column;
+    font-family: roboto;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  nav .submenu1 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-right: 10%;
+    background-color: white;
+    border: 0px solid black;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav .submenu1 li {
+    display: block;
+    flex-direction: column;
+    font-family: roboto;
+    font-size: 12px;
+    margin-left: 10%;
+  }
+  
+  nav li:hover > .submenu {
+    display: block;
+  }
+  
+  nav li:hover > .submenu1 {
+    display: block;
+  }
+
+.iconblock{
+    display: flex;
+    margin-right: 2%;
+}
+
+.icon {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+.icon button {
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.icon button img {
+    width: 35px;
+    height: 35px;
+}
+
+.cart {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .cart h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart-items li {
+    margin-bottom: 10px;
+  }
+  
+  .total {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .checkout-button {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
